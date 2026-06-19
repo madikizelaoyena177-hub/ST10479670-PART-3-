@@ -2,44 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO META TAGS -->
     <title>Contact Us | Mzantsi Soul Food Durban</title>
 
     <meta name="description"
-          content="Contact Mzantsi Soul Food in Durban for fresh organic South African meals, catering services, menu enquiries, bookings, orders and customer support.">
+          content="Contact Mzantsi Soul Food in Durban for bookings, catering, menu enquiries and fresh organic South African meals.">
 
     <meta name="keywords"
-          content="Mzantsi Soul Food, Durban Restaurant, Contact Us, Organic Food Durban, South African Cuisine, Catering Services, Healthy Meals, Florida Road Durban">
+          content="Mzantsi Soul Food, Contact Durban Restaurant, Organic Food Durban, Catering Durban, Florida Road Restaurant">
 
-    <meta name="author"
-          content="Mzantsi Soul Food PTY Ltd">
+    <meta name="author" content="Mzantsi Soul Food PTY Ltd">
+    <meta name="robots" content="index, follow">
 
-    <meta name="robots"
-          content="index, follow">
-
-    <!-- OPEN GRAPH TAGS -->
-    <meta property="og:title"
-          content="Mzantsi Soul Food | Contact Us">
-
-    <meta property="og:description"
-          content="Get in touch with Mzantsi Soul Food for enquiries, bookings, catering services and healthy organic South African cuisine in Durban.">
-
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:image"
-          content="images/MSF-Logo.png">
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Mzantsi Soul Food | Contact Us">
+    <meta property="og:description" content="Get in touch for bookings, catering and enquiries at Mzantsi Soul Food in Durban.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/MSF-Logo.png">
 
     <!-- FAVICON -->
-    <link rel="icon"
-          type="image/png"
-          href="images/MSF-Logo.png">
+    <link rel="icon" type="image/png" href="images/MSF-Logo.png">
 
-    <link rel="stylesheet"
-          href="styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -47,23 +34,15 @@
 <header>
 
     <div class="brand">
-
-        <img src="images/MSF-Logo.png"
-             alt="Mzantsi Soul Food Logo">
+        <img src="images/MSF-Logo.png" alt="Mzantsi Soul Food Logo">
 
         <div>
             <h1>Mzantsi Soul Food</h1>
-
-            <p>
-                Organic, farm-fresh meals prepared
-                with heart and local love.
-            </p>
+            <p>Organic, farm-fresh meals prepared with heart and local love.</p>
         </div>
-
     </div>
 
     <nav>
-
         <ul>
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="about.html">ℹ️ About</a></li>
@@ -71,123 +50,77 @@
             <li><a href="contact.html">📞 Contact</a></li>
         </ul>
 
-        <!-- SEARCH BOX -->
-        <div class="search-container">
-
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search meals..."
-            >
-
-            <button onclick="searchMenu()">
-                🔍
-            </button>
-
+        <!-- FIXED SEARCH BOX (matches your CSS .search-box) -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search meals...">
         </div>
-
     </nav>
 
 </header>
 
 <main>
 
+    <!-- INTRO -->
     <section class="contact-intro">
-
-        <h1>Get In Touch</h1>
+        <h2>Get In Touch</h2>
 
         <p>
-            Questions? Orders? Catering enquiries?
-            We are here to help with fresh,
-            organic meals and friendly service.
+            Questions, bookings, catering requests or feedback?
+            We are always ready to help you enjoy fresh organic meals.
         </p>
-
     </section>
 
+    <!-- GRID -->
     <section class="contact-grid">
 
+        <!-- CONTACT DETAILS -->
         <div class="contact-details">
 
             <h2>Contact Details</h2>
 
-            <p>
-                <strong>📞 Phone:</strong>
-                078 369 8431
-            </p>
+            <p><strong>📞 Phone:</strong> 078 369 8431</p>
+
+            <p><strong>✉️ Email:</strong> madikizelaoyena177@gmail.com</p>
 
             <p>
-                <strong>✉️ Email:</strong>
-                madikizelaoyena177@gmail.com
-            </p>
-
-            <p>
-                <strong>📍 Address:</strong>
-                295 Florida Road,
-                Windermere,
-                Berea,
-                Durban,
+                <strong>📍 Address:</strong><br>
+                295 Florida Road,<br>
+                Windermere,<br>
+                Berea,<br>
+                Durban,<br>
                 4001
             </p>
 
             <p>
-                <strong>🕒 Opening Hours:</strong><br>
+                <strong>🕒 Hours:</strong><br>
                 Monday - Sunday<br>
                 08:00 AM - 09:00 PM
             </p>
 
         </div>
 
+        <!-- FORM -->
         <div class="form-card">
 
-            <h2>Send Us A Message</h2>
+            <h2>Send A Message</h2>
 
             <form action="mailto:madikizelaoyena177@gmail.com"
                   method="post"
                   enctype="text/plain">
 
-                <label for="name">
-                    Full Name
-                </label>
+                <label>Full Name</label>
+                <input type="text" name="name" required>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required>
+                <label>Email Address</label>
+                <input type="email" name="email" required>
 
-                <label for="email">
-                    Email Address
-                </label>
+                <label>Contact Number</label>
+                <input type="text" name="contact" required>
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required>
+                <label>Message</label>
+                <textarea name="message" rows="5" required></textarea>
 
-                <label for="contact">
-                    Contact Number
-                </label>
-
-                <input
-                    type="text"
-                    id="contact"
-                    name="contact"
-                    required>
-
-                <label for="msg">
-                    Message
-                </label>
-
-                <textarea
-                    id="msg"
-                    name="msg"
-                    rows="5"
-                    required></textarea>
-
-                <button type="submit">
-                    Send Message
-                </button>
+                <button type="submit">Send Message</button>
 
             </form>
 
@@ -195,14 +128,14 @@
 
     </section>
 
+    <!-- MAP -->
     <section class="map-card">
 
         <h2>Find Us</h2>
 
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.1855160528994!2d31.009812775798885!3d-29.830066475032275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707686a0f4bf1%3A0xd26f48cbadf0cd7f!2s295%20Florida%20Rd%2C%20Windermere%2C%20Berea%2C%204001!5e0!3m2!1sen!2sza!4v1773662816462!5m2!1sen!2sza"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.1855160528994!2d31.009812775798885!3d-29.830066475032275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707686a0f4bf1%3A0xd26f48cbadf0cd7f!2s295%20Florida%20Rd%2C%20Windermere%2C%20Berea%2C%204001!5e0!3m2!1sen!2sza!4v1773662816462!5m2!1sen!2sza"
+            loading="lazy">
         </iframe>
 
     </section>
@@ -211,56 +144,36 @@
 
 <footer>
 
+    <p>📞 078 369 8431 | ✉️ madikizelaoyena177@gmail.com</p>
+
     <p>
-        📞 078 369 8431 |
-        ✉️ madikizelaoyena177@gmail.com
+        📍 295 Florida Road, Windermere, Berea, Durban, 4001
     </p>
 
     <p>
-        📍 295 Florida Road,
-        Windermere,
-        Berea,
-        Durban,
-        4001
-    </p>
-
-    <p>
-        © 2026 Mzantsi Soul Food PTY Ltd.
-        All Rights Reserved.
+        © 2026 Mzantsi Soul Food PTY Ltd. All Rights Reserved.
     </p>
 
 </footer>
 
 <script>
-
 function searchMenu() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
 
-    let input =
-    document.getElementById("searchInput")
-    .value.toLowerCase();
-
-    if(input === "") {
-
+    if (!input) {
         alert("Please enter a search term.");
         return;
     }
 
-    let pageText =
-    document.body.innerText.toLowerCase();
+    let pageText = document.body.innerText.toLowerCase();
 
-    if(pageText.includes(input)) {
-
+    if (pageText.includes(input)) {
         alert("Found: " + input);
-
     } else {
-
         alert("No results found.");
-
     }
 }
-
 </script>
 
 </body>
 </html>
-```
