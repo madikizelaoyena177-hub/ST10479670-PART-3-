@@ -2,11 +2,11 @@
     /* ================= MSF BRAND THEME ================= */
     --bg: #fff7ec;
     --surface: #ffffff;
-    --primary: #2f6b3f;        /* deep Mzansi green */
+    --primary: #2f6b3f;
     --primary-soft: #5f8f66;
-    --secondary: #8b5a2b;      /* earthy brown */
-    --accent: #f2d6a2;        /* warm gold */
-    --highlight: #d9772b;     /* cooked food orange */
+    --secondary: #8b5a2b;
+    --accent: #f2d6a2;
+    --highlight: #d9772b;
     --text: #1f2a24;
     --muted: #5a5a5a;
     --border: rgba(0,0,0,0.12);
@@ -33,7 +33,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, #fff, #fff3df);
+    background: linear-gradient(135deg, #ffffff, #fff3df);
     border-bottom: 3px solid var(--secondary);
     padding: 1rem;
     box-shadow: var(--shadow);
@@ -67,6 +67,7 @@ nav ul {
     gap: 0.8rem;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -78,6 +79,7 @@ nav a {
     font-weight: 700;
     border: 1px solid var(--border);
     transition: 0.25s ease;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -132,6 +134,7 @@ section {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 2rem;
+    align-items: center;
 }
 
 .hero h2 {
@@ -168,9 +171,9 @@ section {
     gap: 1.5rem;
 }
 
-.feature-grid { grid-template-columns: repeat(2, 1fr); }
-.about-grid { grid-template-columns: repeat(3, 1fr); }
-.contact-grid { grid-template-columns: 1fr 1fr; }
+.feature-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.about-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.contact-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 /* ================= CARDS ================= */
 
@@ -187,15 +190,17 @@ section {
     border: 1px solid var(--border);
 }
 
-/* ================= MENU IMAGES (REQUIRED 400x400) ================= */
+/* ================= MENU IMAGES ================= */
 
 .menu-photo,
 .featured-photo {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 18px;
     border: 3px solid var(--accent);
+    display: block;
 }
 
 /* ================= PRICE TAG ================= */
@@ -229,6 +234,7 @@ button {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.2s ease;
 }
 
 button:hover {
@@ -244,7 +250,7 @@ footer {
     font-weight: 600;
 }
 
-/* ================= STEAMING POT ANIMATION (FULL MSF VERSION) ================= */
+/* ================= STEAMING POT ================= */
 
 .steaming-pot-section {
     text-align: center;
@@ -262,10 +268,11 @@ footer {
     margin: auto;
 }
 
-/* Steam */
 .steam {
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 30px;
     height: 80px;
     background: radial-gradient(circle, rgba(255,255,255,0.7), transparent);
@@ -274,26 +281,15 @@ footer {
 }
 
 @keyframes rise {
-    0% { transform: translateY(0); opacity: 0.8; }
-    100% { transform: translateY(-130px); opacity: 0; }
+    0% { transform: translate(-50%, 0); opacity: 0.8; }
+    100% { transform: translate(-50%, -130px); opacity: 0; }
 }
 
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 900px) {
-    .hero,
-    .contact-grid,
-    .about-grid {
+    .hero {
         grid-template-columns: 1fr;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-photo,
-    .featured-photo {
-        width: 100%;
-        height: auto;
+        text-align: center;
     }
 }
