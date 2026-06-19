@@ -3,45 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO META TAGS -->
     <title>Menu | Mzantsi Soul Food Durban</title>
 
     <meta name="description"
-          content="Explore the Mzantsi Soul Food menu featuring healthy organic South African meals, salads, smoothie bowls, wraps, grilled dishes and traditional favourites in Durban.">
+          content="Explore the Mzantsi Soul Food menu featuring healthy organic South African meals made with fresh locally sourced ingredients in Durban.">
 
     <meta name="keywords"
-          content="Mzantsi Soul Food Menu, Organic Food Durban, Healthy Meals, South African Cuisine, Restaurant Menu Durban, Fresh Food">
+          content="Mzantsi Soul Food Menu, Organic Food Durban, Healthy Meals, South African Cuisine">
 
-    <meta name="author"
-          content="Mzantsi Soul Food PTY Ltd">
+    <meta name="author" content="Mzantsi Soul Food PTY Ltd">
+    <meta name="robots" content="index, follow">
 
-    <meta name="robots"
-          content="index, follow">
-
-    <!-- OPEN GRAPH TAGS -->
-    <meta property="og:title"
-          content="Mzantsi Soul Food | Menu">
-
-    <meta property="og:description"
-          content="Discover our delicious menu of organic South African meals prepared with fresh locally sourced ingredients.">
-
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:image"
-          content="images/MSF-Logo.png">
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Mzantsi Soul Food | Menu">
+    <meta property="og:description" content="Discover our healthy organic South African meals made with fresh ingredients.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/MSF-Logo.png">
 
     <!-- FAVICON -->
-    <link rel="icon"
-          type="image/png"
-          href="images/MSF-Logo.png">
+    <link rel="icon" type="image/png" href="images/MSF-Logo.png">
 
-    <link rel="stylesheet"
-          href="styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -49,22 +35,15 @@
 <header>
 
     <div class="brand">
-
-        <img src="images/MSF-Logo.png"
-             alt="Mzantsi Soul Food Logo">
+        <img src="images/MSF-Logo.png" alt="Mzantsi Soul Food Logo">
 
         <div>
             <h1>Mzantsi Soul Food</h1>
-            <p>
-                Organic, farm-fresh meals made with
-                seasonal South African ingredients.
-            </p>
+            <p>Organic, farm-fresh meals made with seasonal South African ingredients.</p>
         </div>
-
     </div>
 
     <nav>
-
         <ul>
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="about.html">ℹ️ About</a></li>
@@ -72,145 +51,93 @@
             <li><a href="contact.html">📞 Contact</a></li>
         </ul>
 
-        <div class="search-container">
-
-            <input type="text"
-                   id="searchInput"
-                   placeholder="Search meals...">
-
-            <button onclick="searchMenu()">
-                🔍
-            </button>
-
+        <!-- FIXED SEARCH BOX -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search meals...">
         </div>
-
     </nav>
 
 </header>
 
 <main>
 
+<!-- INTRO -->
 <section class="pricing">
-
-    <h1>Our Menu</h1>
-
-    <p>
-        Enjoy healthy, handcrafted dishes made
-        from seasonal natural ingredients.
-    </p>
-
+    <h2>Our Menu</h2>
+    <p>Enjoy healthy handcrafted dishes made from fresh seasonal ingredients.</p>
 </section>
 
+<!-- MENU GRID -->
 <section class="menu-grid">
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Organic Power Bowl</h3>
-            <p>Roasted vegetables, spinach, quinoa and avocado.</p>
-            <img class="menu-photo"
-                 src="images/meal4.jpg"
-                 alt="Organic Power Bowl">
-            <span class="price-tag">R145</span>
-        </div>
+        <h3>Organic Power Bowl</h3>
+        <p>Roasted vegetables, spinach, quinoa and avocado.</p>
+        <img class="menu-photo" src="images/meal4.jpg" alt="Organic Power Bowl">
+        <span class="price-tag">R145</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Garden Salad Plate</h3>
-            <p>Mixed greens, cucumber, tomatoes and citrus dressing.</p>
-            <img class="menu-photo"
-                 src="images/salad.jpg"
-                 alt="Garden Salad Plate">
-            <span class="price-tag">R110</span>
-        </div>
+        <h3>Garden Salad Plate</h3>
+        <p>Mixed greens, cucumber, tomatoes and citrus dressing.</p>
+        <img class="menu-photo" src="images/salad.jpg" alt="Garden Salad">
+        <span class="price-tag">R110</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Tropical Smoothie Bowl</h3>
-            <p>Berries, mango, granola and chia seeds.</p>
-            <img class="menu-photo"
-                 src="images/meal2.jpg"
-                 alt="Tropical Smoothie Bowl">
-            <span class="price-tag">R65</span>
-        </div>
+        <h3>Tropical Smoothie Bowl</h3>
+        <p>Berries, mango, granola and chia seeds.</p>
+        <img class="menu-photo" src="images/meal2.jpg" alt="Smoothie Bowl">
+        <span class="price-tag">R65</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Grilled Veggie Wrap</h3>
-            <p>Roasted vegetables with hummus and greens.</p>
-            <img class="menu-photo"
-                 src="images/wrap.jpg"
-                 alt="Grilled Veggie Wrap">
-            <span class="price-tag">R95</span>
-        </div>
+        <h3>Grilled Veggie Wrap</h3>
+        <p>Roasted vegetables with hummus and greens.</p>
+        <img class="menu-photo" src="images/wrap.jpg" alt="Veggie Wrap">
+        <span class="price-tag">R95</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Berry Yogurt Parfait</h3>
-            <p>Greek yogurt layered with berries and granola.</p>
-            <img class="menu-photo"
-                 src="images/parfait.jpg"
-                 alt="Berry Yogurt Parfait">
-            <span class="price-tag">R75</span>
-        </div>
+        <h3>Berry Yogurt Parfait</h3>
+        <p>Greek yogurt layered with berries and granola.</p>
+        <img class="menu-photo" src="images/parfait.jpg" alt="Parfait">
+        <span class="price-tag">R75</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Butternut & Spinach Quesadilla</h3>
-            <p>Crispy tortilla filled with butternut and spinach.</p>
-            <img class="menu-photo"
-                 src="images/quesadilla.jpg"
-                 alt="Quesadilla">
-            <span class="price-tag">R87</span>
-        </div>
+        <h3>Butternut & Spinach Quesadilla</h3>
+        <p>Crispy tortilla filled with butternut and spinach.</p>
+        <img class="menu-photo" src="images/quesadilla.jpg" alt="Quesadilla">
+        <span class="price-tag">R87</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Braai Meat Platter</h3>
-            <p>Traditional grilled meats served with pap and salads.</p>
-            <img class="menu-photo"
-                 src="images/braai.jpg"
-                 alt="Braai Meat Platter">
-            <span class="price-tag">R175</span>
-        </div>
+        <h3>Braai Meat Platter</h3>
+        <p>Traditional grilled meats served with pap and salad.</p>
+        <img class="menu-photo" src="images/braai.jpg" alt="Braai Platter">
+        <span class="price-tag">R175</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Grilled Salmon</h3>
-            <p>Fresh grilled salmon served with citrus salad.</p>
-            <img class="menu-photo"
-                 src="images/salmon.jpg"
-                 alt="Grilled Salmon">
-            <span class="price-tag">R90</span>
-        </div>
+        <h3>Grilled Salmon</h3>
+        <p>Fresh salmon served with citrus salad.</p>
+        <img class="menu-photo" src="images/salmon.jpg" alt="Salmon">
+        <span class="price-tag">R90</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Chicken & Veggie Skillet</h3>
-            <p>Seasoned chicken cooked with fresh vegetables.</p>
-            <img class="menu-photo"
-                 src="images/chicken.jpg"
-                 alt="Chicken and Veggie Skillet">
-            <span class="price-tag">R145</span>
-        </div>
+        <h3>Chicken & Veggie Skillet</h3>
+        <p>Seasoned chicken cooked with fresh vegetables.</p>
+        <img class="menu-photo" src="images/chicken.jpg" alt="Chicken Skillet">
+        <span class="price-tag">R145</span>
     </article>
 
     <article class="menu-item">
-        <div class="menu-item-content">
-            <h3>Lentil & Vegetable Stir Fry</h3>
-            <p>Healthy lentils and vegetables cooked to perfection.</p>
-            <img class="menu-photo"
-                 src="images/lentil.jpg"
-                 alt="Lentil and Vegetable Stir Fry">
-            <span class="price-tag">R100</span>
-        </div>
+        <h3>Lentil & Vegetable Stir Fry</h3>
+        <p>Healthy lentils and vegetables cooked to perfection.</p>
+        <img class="menu-photo" src="images/lentil.jpg" alt="Lentil Dish">
+        <span class="price-tag">R100</span>
     </article>
 
 </section>
@@ -219,45 +146,28 @@
 
 <footer>
 
-    <p>
-        📞 078 369 8431 |
-        ✉️ madikizelaoyena177@gmail.com
-    </p>
+    <p>📞 078 369 8431 | ✉️ madikizelaoyena177@gmail.com</p>
 
-    <p>
-        📍 295 Florida Road,
-        Windermere,
-        Berea,
-        Durban,
-        4001
-    </p>
+    <p>📍 295 Florida Road, Windermere, Berea, Durban, 4001</p>
 
-    <p>
-        © 2026 Mzantsi Soul Food PTY Ltd.
-        All Rights Reserved.
-    </p>
+    <p>© 2026 Mzantsi Soul Food PTY Ltd. All Rights Reserved.</p>
 
 </footer>
 
 <script>
 function searchMenu() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
 
-    let input =
-    document.getElementById("searchInput")
-    .value.toLowerCase();
-
-    if(input === "") {
+    if (!input) {
         alert("Please enter a search term.");
         return;
     }
 
-    let pageText =
-    document.body.innerText.toLowerCase();
+    let pageText = document.body.innerText.toLowerCase();
 
-    if(pageText.includes(input)) {
+    if (pageText.includes(input)) {
         alert("Found: " + input);
-    }
-    else {
+    } else {
         alert("No results found.");
     }
 }
